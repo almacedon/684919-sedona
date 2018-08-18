@@ -7,7 +7,7 @@
 	<body>
 		<header class="page-header">
 			<nav class="main-navigation">
-				<a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="City of Sedona"></a>
+				<a href="index.html" aria-label="Главная страница"><img src="img/logo.svg" width="138" height="70" alt="City of Sedona"></a>
 				<ul>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
@@ -23,7 +23,7 @@
 
 			<section class="filter">
 				<h2 class="visually-hidden">Фильтр поиска</h2>
-				<form action="" method="post">
+				<form class="filters" action="https://echo.htmlacademy.ru" method="get">
 					<fieldset class="infrastructure">
 						<legend>Инфраструктура:</legend>
 						<ul class="filter-checkboxes">
@@ -60,7 +60,7 @@
 					</fieldset>
 					<fieldset class="price">
 						<legend>Стоимость в сутки (Р):</legend>
-						<input type="range" name="" min="0" max="3000" step="">
+						<input type="range" name="range" min="0" max="3000" step="100">
 					</fieldset>
 					<input type="submit" value="Показать">
 				</form>
@@ -71,9 +71,9 @@
 				<strong>Найдено: 3</strong>
 				<p>Сортировка:</p>
 				<ul>
-					<li class="results-current">По цене</li>
-					<li>По типу</li>
-					<li>По рейтингу</li>
+					<li class="results-current"><button type="button">По цене</button></li>
+					<li><button type="button">По типу</button></li>
+					<li><button type="button">По рейтингу</button></li>
 				</ul>
 				<ul>
 					<li>
@@ -112,12 +112,14 @@
 			<p><b>#visitsedona</b></p>
 			<div class="footer-social">
 				<ul>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Youtube</a></li>
+					<li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+					<li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+					<li><a href="#"><span class="visually-hidden">Youtube</span></a></li>
 				</ul>
 			</div>
-			<p>website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="113" height="39" alt="HTMLacademy"></a></p>
+			<p>website by 
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="113" height="39" alt="HTMLacademy"><span class="visually-hidden">HTMLacademy</span></a>
+			</p>
 		</footer>
 	</body>
 </html>

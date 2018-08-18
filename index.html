@@ -78,25 +78,25 @@
 			<section class="trip-planning">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в седоне</p>
-				<button aria-label="Открыть форму поиска гостинниц">Поиск гостинницы в Седоне</button>
-				<form class="search-for-hotels visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+				<button type="button" aria-label="Открыть форму поиска гостинниц">Поиск гостинницы в Седоне</button>
+				<form class="search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
 					<label for="arrival-date">Дата заезда:</label>
-					<input type="data" name="data" id="arrival-date" value="24 апреля 2017">
-					<button class="calendar" aria-label="выбрать с помощью календаря"></button>
+					<input type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
+					<button type="button" class="calendar"><span class="visually-hidden">выбрать с помощью календаря</span></button>
 					<label for="departure-date">Дата выезда:</label>
-					<input type="data" name="data" id="departure-date" value="4 июля 2017">
-					<button class="calendar" aria-label="выбрать с помощью календаря"></button>
+					<input type="text" name="date" id="departure-date" placeholder="4 июля 2017">
+					<button type="button" class="calendar"><span class="visually-hidden">выбрать с помощью календаря</span></button>
 					<div class="half-width">
 						<label for="adults-quantity">Взрослые:</label>
-						<button class="minus" aria-label="меньше взрослых"></button>
-						<input type="number" name="number" id="adults-quantity" value="2">
-						<button class="plus" aria-label="больше взрослых"></button>
+						<button type="button" class="minus"><span class="visually-hidden">меньше</span></button>
+						<input type="text" name="number" id="adults-quantity" placeholder="2">
+						<button type="button" class="plus"><span class="visually-hidden">больше</span></button>
 					</div>
 					<div class="half-width">
 						<label for="children-quantity">Дети:</label>
-						<button class="minus" aria-label="меньше детей"></button>
-						<input type="number" name="number" id="children-quantity" value="0">
-						<button class="plus" aria-label="больше детей"></button>
+						<button type="button" class="minus"><span class="visually-hidden">меньше</span></button>
+						<input type="text" name="number" id="children-quantity" placeholder="0">
+						<button type="button" class="plus"><span class="visually-hidden">больше</span></button>
 					</div>
 					<button type="submit">Найти</button>
 				</form>
@@ -109,13 +109,13 @@
 			<p><b>#visitsedona</b></p>
 			<div class="footer-social">
 				<ul>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Youtube</a></li>
+					<li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+					<li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+					<li><a href="#"><span class="visually-hidden">Youtube</span></a></li>
 				</ul>
 			</div>
 			<p>website by 
-				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="113" height="39" alt="HTMLacademy"></a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="113" height="39" alt="HTMLacademy"><span class="visually-hidden">HTMLacademy</span></a>
 			</p>
 		</footer>
 	</body>
