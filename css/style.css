@@ -1,0 +1,193 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+	background-color: #ffffff;
+	text-transform: uppercase;
+}
+
+/*.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}*/
+
+.main-navigation ul,
+.common-advantages,
+.town-advantages,
+.footer-social ul {
+	list-style: none;
+}
+
+.main-navigation a {
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-decoration: none;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+	color: #81b3d2;
+}
+
+.main-navigation a:active {
+	color: #eeeeee;
+}
+
+.intro {
+	background-color: #1a2d35;
+	background-image: url("../img/sedona.jpg");
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+}
+
+.advantages b {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.advantages > p {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+	/*text-align: center;*/
+}
+
+.common-advantages li {
+	background-color: #eeeeee;
+}
+
+li.detailed {
+	background-color: #81b3d2;
+}
+
+.town-advantages li {
+	background-color: #ffffff;
+}
+
+.common-advantages h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.common-advantages span,
+.common-advantages p {
+	color: #333333;
+}
+
+.detailed > h3,
+.detailed span,
+.detailed > p {
+	color: #ffffff;
+}
+
+.town-advantages li {
+	padding-top: 165px;
+	background-image: url("../img/town-advantages.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.trip-planning h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.trip-planning p {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #333333;
+}
+
+.trip-planning > button {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #766357;
+	border: none;
+}
+
+.trip-planning > button:hover,
+.trip-planning > button:focus {
+	background-color: #604e43;
+}
+
+.trip-planning > button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
+.search-for-hotels label {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.search-for-hotels input {
+	color: #000000; /*как повлиять на цвет placeholder?*/
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.search-for-hotels input:hover {
+	background-color: #ebebeb;
+}
+
+.search-for-hotels input:active,
+.search-for-hotels input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+button.calendar {
+	background-image: url("../img/calendar.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.search-for-hotels button[type="submit"] {
+	color: #ffffff;
+	background-color: #81b3d2;
+	border: none;
+}
+
+.search-for-hotels button[type="submit"]:hover,
+.search-for-hotels button[type="submit"]:focus {
+	background-color: #669ec0;
+}
+
+.search-for-hotels button[type="submit"]:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+
+.page-footer b {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.page-footer .social-btn {
+	background-image: url("../img/social.png") no-repeat 0 0;/*что-то не так...*/
+}
