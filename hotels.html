@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="page-header">
@@ -12,7 +15,7 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта штата</a></li>
-					<li class="site-navigation-current"><a>Гостинницы</a></li>
+					<li><a class="cite-navigation-current">Гостинницы</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -62,7 +65,7 @@
 						<legend>Стоимость в сутки (Р):</legend>
 						<input type="range" name="range" min="0" max="3000" step="100">
 					</fieldset>
-					<input type="submit" value="Показать">
+					<button type="submit">Показать</button>
 				</form>
 			</section>
 
@@ -70,37 +73,53 @@
 				<h2 class="visually-hidden">Результаты поиска</h2>
 				<strong>Найдено: 3</strong>
 				<p>Сортировка:</p>
-				<ul>
-					<li class="results-current"><button type="button">По цене</button></li>
-					<li><button type="button">По типу</button></li>
-					<li><button type="button">По рейтингу</button></li>
+				<ul class="sorting">
+					<li><a href="#" class="sorting-current">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По рейтингу</a></li>
 				</ul>
-				<ul>
+				<ul class="arrows">
+					<li>
+						<a href="#">
+							<svg width="11px" height="10px">
+								<polygon points="5.5,0 0,10 11,10 "/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="11px" height="10px"  class="arrows-current">
+								<polyline points="5.5,10 0,0 11,0 "/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul class="hotels">
 					<li>
 						<img src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & SPA">
-						<h3><a href="#">Amara Resort & SPA</a></h3>
+						<h3 class="hotel-name"><a href="#">Amara Resort & SPA</a></h3>
 						<div>Гостинница</div>
 						<div>От 4000</div>
-						<a href="#" class="details">Подробнее</a>
-						<a href="#" class="reservation">Забронировать</a>
+						<span class="details"><a href="#">Подробнее</a></span>
+						<span class="reservation"><a href="#">Забронировать</a></span>
 						<span class="rating">Рейтинг: 8,5</span>
 					</li>
 					<li>
 						<img src="img/hotel-desert.jpg" width="135" height="90" alt="Desert Quail INN">
-						<h3><a href="#">Desert Quail INN</a></h3>
+						<h3 class="hotel-name"><a href="#">Desert Quail INN</a></h3>
 						<div>Мотель</div>
 						<div>От 3000</div>
-						<a href="#" class="details">Подробнее</a>
-						<a href="#" class="reservation">Забронировать</a>
+						<span class="details"><a href="#">Подробнее</a></span>
+						<span class="reservation"><a href="#">Забронировать</a></span>
 						<span class="rating">Рейтинг: 8,9</span>
 					</li>
 					<li>
 						<img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diabolo">
-						<h3><a href="#">Villas at Poco Diabolo</a></h3>
+						<h3 class="hotel-name"><a href="#">Villas at Poco Diabolo</a></h3>
 						<div>Апартаменты</div>
 						<div>От 2000</div>
-						<a href="#" class="details">Подробнее</a>
-						<a href="#" class="reservation">Забронировать</a>
+						<span class="details"><a href="#">Подробнее</a></span>
+						<span class="reservation"><a href="#">Забронировать</a></span>
 						<span class="rating">Рейтинг: 9,2</span>
 					</li>
 				</ul>
