@@ -39,6 +39,7 @@ body {
 .main-navigation a:hover:not(.cite-navigation-current),
 .main-navigation a:focus:not(.cite-navigation-current) {
 	color: #81b3d2;
+	transition: color 0.3s;
 }
 
 .main-navigation a:active {
@@ -91,22 +92,20 @@ body {
 	color: #ffffff;
 }
 
-.town-advantages .icon {
+.town-advantages li {
 	display: inline-block;
-	width: 75px;
-	height: 78px;
 	text-align: center;
 	background-image: url("../img/town-advantages.png");
 	background-repeat: no-repeat;
-	background-position: 0 0px;
+	background-position: 165px 0;
 }
 
-.town-advantages .food {
-	background-position: -400px 0px;
+.town-advantages li:nth-child(2) {
+	background-position: -220px 0px;
 }
 
-.town-advantages .surprice {
-	background-position: -800px 0px;
+.town-advantages li:last-child {
+	background-position: -645px 0px;
 }
 
 .trip-planning h2 {
@@ -150,7 +149,7 @@ body {
 }
 
 .search-for-hotels input {
-	color: #000000; /*как повлиять на цвет placeholder?*/
+	color: #000000; 
 	background-color: #f2f2f2;
 	border: none;
 }
@@ -161,6 +160,7 @@ body {
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
+	text-transform: uppercase;
 }
 
 .search-for-hotels input:hover {
@@ -206,10 +206,10 @@ button.calendar {
 	display: inline-block;
 	width: 46px;
 	height: 46px;
-	background-image: url("../img/social.png");
+	fill: red;
 }
 
-.footer-social .fb {
+/*.footer-social .fb {
 	background-position: -52px 0;
 }
 
@@ -220,7 +220,9 @@ button.calendar {
 .page-footer .social-btn:hover,
 .page-footer .social-btn:focus {
 	background-color: #669ec0;
-}
+}*/
+
+
 
 .page-footer p:last-child {
 	line-height: 26px;
@@ -308,7 +310,7 @@ button.calendar {
 	font-size: 12px;
 	line-height: 18px;
 	color: rgba(0, 0, 0, 0.3);
-	border-bottom: 1px dashed #81b3d2;
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting a:hover,
@@ -392,5 +394,6 @@ button.calendar {
 }
 
 .hotels .rating {
+	color: #666666;
 	background-color: #f2f2f2;
 }
