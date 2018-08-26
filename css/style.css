@@ -202,11 +202,29 @@ button.calendar {
 	color: #000000;
 }
 
+.footer-social ul {
+	display: flex;
+}
+
 .footer-social .social-btn {
 	display: inline-block;
+	box-sizing: border-box;
+	text-align: center;
 	width: 46px;
 	height: 46px;
 	background-color: #81b3d2;
+}
+
+.footer-social .tw {
+	padding-top: 15px;
+}
+
+.footer-social .fb {
+	padding-top: 13px;
+}
+
+.footer-social .yt {
+	padding-top: 16px;
 }
 
 .footer-social .social-btn:hover,
