@@ -202,45 +202,44 @@ button.calendar {
 	color: #000000;
 }
 
-.page-footer .social-btn {
+.footer-social .social-btn {
 	display: inline-block;
 	width: 46px;
 	height: 46px;
-	fill: red;
+	background-color: #81b3d2;
 }
 
-/*.footer-social .fb {
-	background-position: -52px 0;
-}
-
-.footer-social .yt {
-	background-position: 46px 0;
-}
-
-.page-footer .social-btn:hover,
-.page-footer .social-btn:focus {
+.footer-social .social-btn:hover,
+.footer-social .social-btn:focus {
 	background-color: #669ec0;
-}*/
+}
 
+.footer-social .social-btn:active {
+	background-color: #5496bd;
+}
 
+.social-btn:active svg {
+	fill: #88b6d1;
+	fill-opacity: 0.3;
+}
 
 .page-footer p:last-child {
 	line-height: 26px;
 	color: #000000;
 }
 
-.page-footer svg {
+.HTMLacademy svg {
 	width: 113px;
 	height: 39px;
 	fill: #000000;
 }
 
-.page-footer svg:hover,
-.page-footer svg:focus {
-	fill: #81b3d2; /*при этом буква t не в деле*/
+.HTMLacademy svg:hover,
+.HTMLacademy svg:focus {
+	fill: #81b3d2;
 }
 
-.page-footer svg:active {
+.HTMLacademy svg:active {
 	fill: #bdbbbc;
 }
 
