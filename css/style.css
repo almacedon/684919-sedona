@@ -22,10 +22,12 @@ body {
 	overflow: hidden;
 }
 
-.main-navigation ul,
+.main-navigation,
 .common-advantages,
 .town-advantages,
 .footer-social ul {
+	padding: 0;
+	margin: 0;
 	list-style: none;
 }
 
@@ -413,4 +415,24 @@ button.calendar {
 .hotels .rating {
 	color: #666666;
 	background-color: #f2f2f2;
+}
+
+/*стили для сетки*/
+
+.main-navigation li {
+	box-sizing: border-box;
+	width: 239px;
+	height: 56px;
+	background-color: red;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.main-navigation li:nth-child(2),
+.main-navigation li:last-child {
+	background-color: blue;
+}
+
+.main-navigation {
+	display: flex;
 }
