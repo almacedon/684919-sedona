@@ -89,27 +89,29 @@
 					<h2>Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинниц в седоне</p>
 					<button type="button" aria-label="Открыть форму поиска гостинниц">Поиск гостинницы в Седоне</button>
-					<form class="search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
-						<label for="arrival-date">Дата заезда:</label>
-						<input type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
-						<button type="button" class="calendar"><span class="visually-hidden">выбрать с помощью календаря</span></button>
-						<label for="departure-date">Дата выезда:</label>
-						<input type="text" name="date" id="departure-date" placeholder="4 июля 2017">
-						<button type="button" class="calendar"><span class="visually-hidden">выбрать с помощью календаря</span></button>
-						<div class="half-width">
-							<label for="adults-quantity">Взрослые:</label>
-							<button type="button" class="minus"><span class="visually-hidden">меньше</span></button>
-							<input type="text" name="number" id="adults-quantity" placeholder="2">
-							<button type="button" class="plus"><span class="visually-hidden">больше</span></button>
-						</div>
-						<div class="half-width">
-							<label for="children-quantity">Дети:</label>
-							<button type="button" class="minus"><span class="visually-hidden">меньше</span></button>
-							<input type="text" name="number" id="children-quantity" placeholder="0">
-							<button type="button" class="plus"><span class="visually-hidden">больше</span></button>
-						</div>
-						<button type="submit">Найти</button>
-					</form>
+					<div class="searching-form">
+						<form class="search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
+							<label for="arrival-date">Дата заезда:</label>
+							<input type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
+							<button type="button" class="calendar"><span class="visually-hidden">выбрать с помощью календаря</span></button>
+							<label for="departure-date">Дата выезда:</label>
+							<input type="text" name="date" id="departure-date" placeholder="4 июля 2017">
+							<button type="button" class="calendar"><span class="visually-hidden">выбрать с помощью календаря</span></button>
+							<div class="half-width">
+								<label for="adults-quantity">Взрослые:</label>
+								<button type="button" class="minus"><span class="visually-hidden">меньше</span></button>
+								<input type="text" name="number" id="adults-quantity" placeholder="2">
+								<button type="button" class="plus"><span class="visually-hidden">больше</span></button>
+							</div>
+							<div class="half-width">
+								<label for="children-quantity">Дети:</label>
+								<button type="button" class="minus"><span class="visually-hidden">меньше</span></button>
+								<input type="text" name="number" id="children-quantity" placeholder="0">
+								<button type="button" class="plus"><span class="visually-hidden">больше</span></button>
+							</div>
+							<button type="submit">Найти</button>
+						</form>
+					</div>
 					<img src="img/map.png" class="map" width="1200" height="593" alt="Седона находится в штате Аризона">
 				</section>
 

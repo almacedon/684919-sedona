@@ -91,7 +91,7 @@ body {
 	transition: color 0.3s;
 }
 
-.main-navigation a:active {
+.main-navigation a:active:not(.cite-navigation-current) {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -228,7 +228,12 @@ body {
 	text-align: center;
 }
 
+.trip-planning {
+	padding-top: 55px;
+}
+
 .trip-planning h2 {
+	text-align: center;
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
@@ -236,10 +241,12 @@ body {
 }
 
 .trip-planning p {
+	text-align: center;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #333333;
+	margin-bottom: 52px;
 }
 
 .trip-planning > button {
@@ -247,8 +254,13 @@ body {
 	line-height: 26px;
 	font-weight: 700;
 	color: #ffffff;
+	text-transform: inherit;
 	background-color: #766357;
 	border: none;
+	display: block;
+	margin: 0 auto;
+	width: 568px;
+	height: 86px;
 }
 
 .trip-planning > button:hover,
@@ -259,6 +271,25 @@ body {
 .trip-planning > button:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
+}
+
+.searching-form {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	padding: 55px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	width: 568px;
+	height: 395px;
+	box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.15);
+}
+
+.search-for-hotels label,
+.search-for-hotels input,
+.search-for-hotels button {
+	width: auto;
 }
 
 .search-for-hotels label {
@@ -300,6 +331,13 @@ button.calendar {
 }
 
 .search-for-hotels button[type="submit"] {
+	width: 458px;
+	height: 58px;
+	text-transform: inherit;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	margin: 0 auto;
 	color: #ffffff;
 	background-color: #81b3d2;
 	border: none;
@@ -329,11 +367,9 @@ button.calendar {
 	width: 33.333333%;
 	min-height: 120px;
 	text-align: center;
-}
-
-.small-phrase,
-.copyright {
-	background-color: green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .small-phrase p {
