@@ -7,7 +7,7 @@ body {
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 	text-transform: uppercase;
 }
 
@@ -31,6 +31,53 @@ body {
 	list-style: none;
 }
 
+.container {
+	width: 1200px;
+	box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.35);
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+.header-logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 130px;
+	margin: 0 auto;
+}
+
+.main-navigation {
+	display: flex;
+}
+
+.main-navigation li {
+	box-sizing: border-box;
+	width: 239px;
+	height: 56px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.main-navigation li:nth-child(2) {
+	margin-right: auto;
+}
+
+.main-navigation li:nth-child(3) {
+	margin-left: auto;
+}
+
+.main-navigation li:first-child,
+.main-navigation li:nth-child(2) {
+	text-align: left;
+	padding-left: 72px;
+}
+
+.main-navigation li:last-child,
+.main-navigation li:nth-child(3) {
+	text-align: right;
+	padding-right: 73px;
+}
+
 .main-navigation a {
 	line-height: 26px;
 	font-weight: 700;
@@ -49,13 +96,30 @@ body {
 }
 
 .intro {
+	padding-top: 76px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 509px;
 	background-color: #1a2d35;
 	background-image: url("../img/sedona.jpg");
 	background-repeat: no-repeat;
-	/*background-size: cover;*/
+	background-position: 0 -56px;
+	margin-bottom: 65px;
+}
+
+.intro img {
+	display: block;
+	width: 458px;
+	height: 352px;
+	margin: 0 auto;
 }
 
 .advantages b {
+	display: block;
+	width: 600px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -66,7 +130,8 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
-	/*text-align: center;*/
+	text-align: center;
+	margin-bottom: 55px;
 }
 
 .common-advantages li {
@@ -88,26 +153,79 @@ body {
 	color: #000000;
 }
 
-.detailed > h3,
-.detailed span,
-.detailed > p {
+.common-advantages span {
+	display: block;
+}
+
+.description h3,
+.description span,
+.description p {
 	color: #ffffff;
+	text-align: center;
+}
+
+.detailed {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.detailed .description {
+	width: 33.333333%;
+	box-sizing: border-box;
+	padding: 50px 50px 40px 50px;
+}
+
+.detailed:nth-child(2) .description {
+	padding: 48px;
+}
+
+.detailed:nth-child(2) {
+	flex-direction: row-reverse;
+}
+
+.ddetailed img {
+	width: 66.666666%;
+}
+
+.town-advantages {
+	display: flex;
 }
 
 .town-advantages li {
-	display: inline-block;
+	width: 33.3%;
+	min-height: 330px;
+	box-sizing: border-box;
+	padding: 160px 72px 0 72px; 
 	text-align: center;
+	background-color: #ffffff;
 	background-image: url("../img/town-advantages.png");
 	background-repeat: no-repeat;
-	background-position: 165px 0;
+	background-position: 162px 60px;
 }
 
 .town-advantages li:nth-child(2) {
-	background-position: -220px 0px;
+	background-position: -240px 60px;
 }
 
 .town-advantages li:last-child {
-	background-position: -645px 0px;
+	background-position: -645px 56px;
+}
+
+.three-columns {
+	display: flex;
+}
+
+.three-columns li {
+	width: 33.33333333%;
+	min-height: 256px;
+	box-sizing: border-box;
+	padding: 48px 50px 40px 50px;
+}
+
+.three-columns h3,
+.three-columns span,
+.three-columns p {
+	text-align: center;
 }
 
 .trip-planning h2 {
@@ -197,6 +315,33 @@ button.calendar {
 	background-color: #5496bd;
 }
 
+.map {
+	width: 100%;
+	height: 594px;
+}
+
+.page-footer {
+	display: flex;
+	box-sizing: border-box;
+}
+
+.page-footer div {
+	width: 33.333333%;
+	min-height: 120px;
+	text-align: center;
+}
+
+.small-phrase,
+.copyright {
+	background-color: green;
+}
+
+.small-phrase p {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 .page-footer b {
 	font-size: 21px;
 	line-height: 26px;
@@ -206,6 +351,14 @@ button.calendar {
 
 .footer-social ul {
 	display: flex;
+}
+
+.footer-social li {
+	margin-right: 6px;
+}
+
+.footer-social li:last-child {
+	margin-right: 0;
 }
 
 .footer-social .social-btn {
@@ -243,7 +396,7 @@ button.calendar {
 	fill-opacity: 0.3;
 }
 
-.page-footer p:last-child {
+.copyright p {
 	line-height: 26px;
 	color: #000000;
 }
@@ -417,22 +570,3 @@ button.calendar {
 	background-color: #f2f2f2;
 }
 
-/*стили для сетки*/
-
-.main-navigation li {
-	box-sizing: border-box;
-	width: 239px;
-	height: 56px;
-	background-color: red;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-.main-navigation li:nth-child(2),
-.main-navigation li:last-child {
-	background-color: blue;
-}
-
-.main-navigation {
-	display: flex;
-}
