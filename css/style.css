@@ -769,6 +769,8 @@ hr {
 	font-weight: 700;
 	color: #ffffff;
 	background-color: #81b3d2;
+	padding: 3px 0;
+	box-sizing: border-box;
 	text-decoration: none;
 }
 
@@ -790,6 +792,8 @@ hr {
 	font-weight: 700;
 	color: #ffffff;
 	background-color: #766357;
+	padding: 3px 0;
+	box-sizing: border-box;
 	text-decoration: none;
 }
 
@@ -809,6 +813,8 @@ hr {
 	height: 27px;
 	text-align: center;
 	color: #666666;
-	background-color: #f2f2f2; /*как же отодвинуть его к правому краю?*/
+	background-color: #f2f2f2;
+	padding: 3px 0;
+	box-sizing: border-box; /*как же отодвинуть его к правому краю?*/
 }
 
