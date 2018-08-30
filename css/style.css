@@ -211,20 +211,18 @@ body {
 	background-position: -645px 56px;
 }
 
-.three-columns {
-	display: flex;
-}
-
-.three-columns li {
-	width: 33.33333333%;
+.not-detailed {
+	display: inline-block;
+	width: 33.35%;
 	min-height: 256px;
 	box-sizing: border-box;
 	padding: 48px 50px 40px 50px;
+	margin-right: -4px;
 }
 
-.three-columns h3,
-.three-columns span,
-.three-columns p {
+.not-detailed h3,
+.not-detailed span,
+.not-detailed p {
 	text-align: center;
 }
 
@@ -292,7 +290,7 @@ body {
 	margin-bottom: 30px;
 }
 
-.label {
+.searching-form label {
 	padding-top: 6px;
 	padding-bottom: 6px;
 }
@@ -608,6 +606,7 @@ body {
 	align-items: baseline;
 	padding: 25px 72px;
 	box-sizing: border-box;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .results-preview ul,
@@ -695,13 +694,6 @@ body {
 	fill: #81b3d2;
 }
 
-hr {
-	background-color: #e5e5e5;
-	border: 0;
-	height: 1px;
-	margin: 0;
-}
-
 .hotels {
 	padding: 0;
 	margin: 0;
@@ -710,6 +702,7 @@ hr {
 .hotels li {
 	display: flex;
 	padding: 30px 72px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels img {
@@ -719,6 +712,7 @@ hr {
 }
 
 .hotel-about {
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -808,13 +802,12 @@ hr {
 }
 
 .hotels .rating {
+	margin-left: auto;
 	display: block;
 	width: 110px;
 	height: 27px;
 	text-align: center;
 	color: #666666;
-	background-color: #f2f2f2;
-	padding: 3px 0;
-	box-sizing: border-box; /*как же отодвинуть его к правому краю?*/
+	background-color: #f2f2f2; /*как же отодвинуть его к правому краю?*/
 }
 
