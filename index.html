@@ -91,23 +91,81 @@
 					<button type="button" aria-label="Открыть форму поиска гостинниц">Поиск гостинницы в Седоне</button>
 					<div class="searching-form">
 						<form class="search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
-							<label for="arrival-date">Дата заезда:</label>
-							<input type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
-							<button type="button" class="calendar"><span class="visually-hidden">выбрать с помощью календаря</span></button>
-							<label for="departure-date">Дата выезда:</label>
-							<input type="text" name="date" id="departure-date" placeholder="4 июля 2017">
-							<button type="button" class="calendar"><span class="visually-hidden">выбрать с помощью календаря</span></button>
-							<div class="half-width">
-								<label for="adults-quantity">Взрослые:</label>
-								<button type="button" class="minus"><span class="visually-hidden">меньше</span></button>
-								<input type="text" name="number" id="adults-quantity" placeholder="2">
-								<button type="button" class="plus"><span class="visually-hidden">больше</span></button>
+							<div class="entire-width">
+								<div class="label">
+									<label for="arrival-date">Дата заезда:</label>
+								</div>
+								<div>
+									<input type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
+									<button type="button" class="calendar">
+										<span class="visually-hidden">выбрать с помощью календаря</span>
+										<svg width="21px" height="22px" viewBox="0 0 21 22">
+											<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+											<rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+											<rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+											<rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+											<rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+											<rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+											<rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+											<rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+											<rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+											<rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+										</svg>
+									</button>
+								</div>
 							</div>
-							<div class="half-width">
-								<label for="children-quantity">Дети:</label>
-								<button type="button" class="minus"><span class="visually-hidden">меньше</span></button>
-								<input type="text" name="number" id="children-quantity" placeholder="0">
-								<button type="button" class="plus"><span class="visually-hidden">больше</span></button>
+							<div class="entire-width">
+								<div class="label">
+									<label for="departure-date">Дата выезда:</label>
+								</div>
+								<div>
+									<input type="text" name="date" id="departure-date" placeholder="4 июля 2017">
+									<button type="button" class="calendar">
+										<span class="visually-hidden">выбрать с помощью календаря</span>
+										<svg width="21px" height="22px" viewBox="0 0 21 22">
+											<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+											<rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+											<rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+											<rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+											<rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+											<rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+											<rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+											<rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+											<rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+											<rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="children-and-adults">
+								<div class="half-width">
+									<div class="label">
+										<label for="adults-quantity">Взрослые:</label>
+									</div>
+									<div>
+										<button type="button" class="minus">
+											<span class="visually-hidden">меньше</span>
+										</button>
+										<input type="text" name="number" id="adults-quantity" placeholder="2">
+										<button type="button" class="plus">
+											<span class="visually-hidden">больше</span>
+										</button>
+									</div>
+								</div>
+								<div class="half-width">
+									<div class="label">
+										<label for="children-quantity">Дети:</label>
+									</div>
+									<div>
+										<button type="button" class="minus">
+											<span class="visually-hidden">меньше</span>
+										</button>
+										<input type="text" name="number" id="children-quantity" placeholder="0">
+										<button type="button" class="plus">
+											<span class="visually-hidden">больше</span>
+										</button>
+									</div>
+								</div>
 							</div>
 							<button type="submit">Найти</button>
 						</form>

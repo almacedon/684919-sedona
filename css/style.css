@@ -286,10 +286,15 @@ body {
 	box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.15);
 }
 
-.search-for-hotels label,
-.search-for-hotels input,
-.search-for-hotels button {
-	width: auto;
+.entire-width {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.label {
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 .search-for-hotels label {
@@ -300,9 +305,38 @@ body {
 }
 
 .search-for-hotels input {
+	width: 346px;
+	height: 38px;
 	color: #000000; 
 	background-color: #f2f2f2;
 	border: none;
+	padding: 8px 9px 8px 13px;
+	box-sizing: border-box;
+}
+
+.children-and-adults {
+	display: flex;
+	margin-bottom: 54px;
+}
+
+.children-and-adults .half-width {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	padding-right: 3px;
+}
+
+.children-and-adults .half-width:last-child {
+	padding: 0;
+	justify-content: flex-end;
+}
+
+.half-width:last-child .label {
+	margin-right: 27px;
+}
+
+.half-width input {
+	width: 114px;
 }
 
 .search-for-hotels input::placeholder {
@@ -314,20 +348,49 @@ body {
 	text-transform: uppercase;
 }
 
+.search-for-hotels input[name="number"]::placeholder {
+	text-align: center;
+}
+
 .search-for-hotels input:hover {
 	background-color: #ebebeb;
 }
 
 .search-for-hotels input:active,
 .search-for-hotels input:focus {
+	outline: 0;
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 }
 
-button.calendar {
-	background-image: url("../img/calendar.png");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+.search-for-hotels button[type="button"] {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	position: absolute;
+}
+
+.search-for-hostels button[type="button"]:first-child {
+	top: 50px;
+	right: 50px;
+}
+
+.calendar svg {
+	fill: #a9a9a9;
+}
+
+.calendar:hover svg,
+.calendar:focus svg {
+	fill: #000000;
+}
+
+.calendar:active svg {
+	fill: #81b3d2;
+}
+
+.search-for-hotels input[name="number"] {
+	padding: 0;
 }
 
 .search-for-hotels button[type="submit"] {
