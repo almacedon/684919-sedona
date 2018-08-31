@@ -329,7 +329,7 @@ body {
 	justify-content: flex-end;
 }
 
-.half-width:last-child .label {
+.half-width:last-child label {
 	margin-right: 27px;
 }
 
@@ -369,9 +369,16 @@ body {
 	position: absolute;
 }
 
-.search-for-hostels button[type="button"]:first-child {
-	top: 50px;
-	right: 50px;
+.search-for-hotels .calendar {
+	position: absolute;
+	top: 62px;
+	right: 62px;
+}
+
+.search-for-hotels .right-calendar {
+	position: absolute;
+	top: 130px;
+	right: 62px;
 }
 
 .calendar svg {
@@ -385,6 +392,37 @@ body {
 
 .calendar:active svg {
 	fill: #81b3d2;
+}
+
+.half-width .symbol {
+	display: block;/*не помогло*/
+	width: 12px;
+	height: 3px;
+}
+
+.half-width .plus {
+	position: absolute;
+	top: 190px;
+	left: 170px;
+}
+
+.half-width .right-plus {
+	position: absolute;
+	top: 190px;
+	right: 155px;
+} /*что не так с областью клика этих кнопок?*/
+
+.symbol svg {
+	stroke: #a9a9a9;
+}
+
+.symbol:hover svg,
+.symbol:focus svg {
+	stroke: #000000;
+}
+
+.symbol:active svg {
+	stroke: #81b3d2;
 }
 
 .search-for-hotels input[name="number"] {
@@ -808,6 +846,6 @@ body {
 	height: 27px;
 	text-align: center;
 	color: #666666;
-	background-color: #f2f2f2; /*как же отодвинуть его к правому краю?*/
+	background-color: #f2f2f2;
 }
 
