@@ -290,6 +290,10 @@ body {
 	margin-bottom: 30px;
 }
 
+.entire-width div {
+	position: relative;
+}
+
 .searching-form label {
 	padding-top: 6px;
 	padding-bottom: 6px;
@@ -371,14 +375,8 @@ body {
 
 .search-for-hotels .calendar {
 	position: absolute;
-	top: 62px;
-	right: 62px;
-}
-
-.search-for-hotels .right-calendar {
-	position: absolute;
-	top: 130px;
-	right: 62px;
+	top: 7px;
+	right: 7px;
 }
 
 .calendar svg {
@@ -394,23 +392,20 @@ body {
 	fill: #81b3d2;
 }
 
+.half-width div {
+	position: relative;
+}
+
 .half-width .symbol {
-	display: block;/*не помогло*/
-	width: 12px;
-	height: 3px;
+	width: 38px;
+	height: 38px;
 }
 
 .half-width .plus {
 	position: absolute;
-	top: 190px;
-	left: 170px;
+	top: 0px;
+	left: 76px;
 }
-
-.half-width .right-plus {
-	position: absolute;
-	top: 190px;
-	right: 155px;
-} /*что не так с областью клика этих кнопок?*/
 
 .symbol svg {
 	stroke: #a9a9a9;
