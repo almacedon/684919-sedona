@@ -11,7 +11,7 @@ body {
 	text-transform: uppercase;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -309,7 +309,7 @@ body {
 .search-for-hotels input {
 	width: 346px;
 	height: 38px;
-	color: #000000; 
+	color: #000000;
 	background-color: #f2f2f2;
 	border: none;
 	padding: 8px 9px 8px 13px;
@@ -335,10 +335,6 @@ body {
 
 .half-width:last-child label {
 	margin-right: 27px;
-}
-
-.half-width input {
-	width: 114px;
 }
 
 .search-for-hotels input::placeholder {
@@ -369,7 +365,6 @@ body {
 	border: 0;
 	margin: 0;
 	padding: 0;
-	background-color: transparent;
 	position: absolute;
 }
 
@@ -377,6 +372,7 @@ body {
 	position: absolute;
 	top: 7px;
 	right: 7px;
+	background-color: transparent;
 }
 
 .calendar svg {
@@ -392,13 +388,24 @@ body {
 	fill: #81b3d2;
 }
 
-.half-width div {
+/*-----------------------------------------------------------------------------*/
+
+
+.half-width .input-for-number {
 	position: relative;
+	display: flex;
+	width: 114px;
+}
+
+.half-width input {
+	width: 38px;
+	margin: 0 auto;
 }
 
 .half-width .symbol {
 	width: 38px;
 	height: 38px;
+	background-color: #f2f2f2;
 }
 
 .half-width .plus {
@@ -575,10 +582,121 @@ body {
 
 .right-part {
 	width: 316px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: stretch;
+	margin: ;
+	color: #ffffff;
+}
+
+.filter-range-title {
+	margin-bottom: 9px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.price-controls {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	font-size: 0;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.price-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	cursor: pointer;
+}
+
+.price-controls .min-price {
+	margin-top: 5px;
+	width: 90px;
+	padding-left: 65px;
+}
+
+.price-controls .max-price {
+	width: 90px;
+	padding-left: 52px;
+}
+
+.price-controls input {
+	width: 50px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	background: #1c4f80;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+.btn-transparent {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.btn-transparent:hover {
+	color: #000000;
+	background: #ffffff;
 }
 
 .filters fieldset {
@@ -776,8 +894,10 @@ body {
 	display: flex;
 }
 
-.info span:first-child {
-	margin-right: 39px;
+.info span {
+	display: inline-block;
+	width: 110px;
+	margin-right: 6px;
 }
 
 .bottom-string {
