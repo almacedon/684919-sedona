@@ -952,14 +952,10 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	position: relative;
 }
 
-.top-string {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.top-string h3 {
+.hotel-about .hotel-name {
 	margin: 0;
 	margin-right: auto;
 }
@@ -979,17 +975,6 @@ input[type="radio"].visually-hidden {
 
 .hotel-name a:active {
 	color: rgba(0, 0, 0, 0.3);
-}
-
-.top-string .star {
-	width: 17px;
-	height: 17px;
-	background-image: url(../img/star.svg);
-	margin-right: 6px;
-}
-
-.top-string .star:last-child {
-	margin-right: 0;
 }
 
 .info {
@@ -1056,14 +1041,71 @@ input[type="radio"].visually-hidden {
 	background-color: #503e33;
 }
 
-.hotels .rating {
+.bottom-string .stars-rating {
+	position: relative;
 	margin-left: auto;
 	display: block;
 	width: 110px;
+	height: 27px;
 	padding: 3px 0;
 	box-sizing: border-box;
 	text-align: center;
 	color: #666666;
 	background-color: #f2f2f2;
+}
+
+.stars-rating p {
+	margin: 0;
+}
+
+.stars-4 {
+	position: absolute;
+	top: -55px;
+	right: 0px;
+	width: 90px;
+	height: 17px;
+	background-image:
+		url(../img/star.svg),
+		url(../img/star.svg),
+		url(../img/star.svg),
+		url(../img/star.svg);
+	background-repeat: no-repeat;
+	background-position:
+		0 0,
+		24px 0,
+		48px 0,
+		72px 0;
+}
+
+.stars-3 {
+	position: absolute;
+	top: -55px;
+	right: 0px;
+	width: 65px;
+	height: 17px;
+	background-image:
+		url(../img/star.svg),
+		url(../img/star.svg),
+		url(../img/star.svg);
+	background-repeat: no-repeat;
+	background-position:
+		0 0,
+		24px 0,
+		48px 0;
+}
+
+.stars-2 {
+	position: absolute;
+	top: -55px;
+	right: 0px;
+	width: 41px;
+	height: 17px;
+	background-image:
+		url(../img/star.svg),
+		url(../img/star.svg);
+	background-repeat: no-repeat;
+	background-position:
+		0 0,
+		24px 0;
 }
 
