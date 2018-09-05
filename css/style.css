@@ -11,7 +11,9 @@ body {
 	text-transform: uppercase;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -101,9 +103,9 @@ body {
 	width: 100%;
 	height: 509px;
 	background-color: #1a2d35;
-	background-image: url("../img/sedona.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 -56px;
+	background-image: url("../img/polygon.svg"), url("../img/sedona.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0 452px, 0 -56px;
 	margin-bottom: 65px;
 }
 
@@ -669,7 +671,7 @@ body {
 }
 
 .range-toggle:hover {
-	background: #1c4f80;
+	transform: scale(1.1);
 }
 
 .range-toggle-min {
@@ -750,6 +752,68 @@ body {
 .filters button:focus {
 	color: #000000;
 	background-color: #ffffff;
+}
+
+.filter-checkbox {
+	position: relative;
+}
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+	position: absolute;
+	top: -4px;
+	left: -39px;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+}
+
+/*.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 26px;
+	height: 5px;
+	background-color: #ffffff;
+	transform: rotate(-45deg);
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+	content: "";
+	position: absolute;
+	top: 5.7px;
+	left: 3.9px;
+	width: 5px;
+	height: 10px;
+	background-color: #ffffff;
+	transform: rotate(-45deg);
+}*/
+
+.filter-checkbox svg {
+	display: none;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + svg {
+	display: block;
+	position: absolute;
+	top: -2px;
+	left: -39px;
+	fill: #ffffff;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+
+}
+
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+	border-color: #6a6a6a;
+}
+
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::before,
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::after {
+	background-color: #6a6a6a;
 }
 
 .results-preview {
