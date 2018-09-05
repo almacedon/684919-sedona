@@ -214,7 +214,8 @@ input[type="radio"].visually-hidden {
 }
 
 .not-detailed {
-	display: inline-block;
+	display: inline-flex;
+	flex-direction: column;
 	width: 33.35%;
 	min-height: 256px;
 	box-sizing: border-box;
@@ -226,6 +227,11 @@ input[type="radio"].visually-hidden {
 .not-detailed span,
 .not-detailed p {
 	text-align: center;
+}
+
+.not-detailed h3 {
+	align-self: center;
+	width: 150px;
 }
 
 .trip-planning {
@@ -389,8 +395,6 @@ input[type="radio"].visually-hidden {
 .calendar:active svg {
 	fill: #81b3d2;
 }
-
-/*-----------------------------------------------------------------------------*/
 
 
 .half-width .input-for-number {
@@ -933,8 +937,14 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 }
 
-.hotels h3 {
+.top-string {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.top-string h3 {
 	margin: 0;
+	margin-right: auto;
 }
 
 .hotel-name a {
@@ -952,6 +962,17 @@ input[type="radio"].visually-hidden {
 
 .hotel-name a:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.top-string .star {
+	width: 17px;
+	height: 17px;
+	background-image: url(../img/star.svg);
+	margin-right: 6px;
+}
+
+.top-string .star:last-child {
+	margin-right: 0;
 }
 
 .info {
