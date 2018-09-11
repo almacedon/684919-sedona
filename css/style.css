@@ -581,9 +581,9 @@ input[type="radio"].visually-hidden {
 
 .page-footer {
 	position: absolute;
-	margin-top: -127px;
+	margin-top: -125px;
 	width: 1200px;
-	min-height: 140px;
+	min-height: 125px;
 	background-color: rgba(255, 255, 255, 0.9);
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -594,7 +594,7 @@ input[type="radio"].visually-hidden {
 
 .inner-page-footer {
 	width: 1200px;
-	min-height: 140px;
+	min-height: 120px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -651,12 +651,12 @@ input[type="radio"].visually-hidden {
 			box-sizing: border-box;
 	text-align: center;
 	width: 46px;
-	height: 46px;
+	height: 48px;
 	background-color: #81b3d2;
 }
 
 .footer-social .tw {
-	padding-top: 15px;
+	padding-top: 17px;
 }
 
 .footer-social .fb {
@@ -796,14 +796,14 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls .min-price {
-	margin-top: 5px;
+	margin-top: 4px;
 	width: 90px;
-	padding-left: 65px;
+	padding-left: 64px;
 }
 
 .price-controls .max-price {
 	width: 90px;
-	padding-left: 52px;
+	padding-left: 55px;
 }
 
 .price-controls input {
@@ -911,12 +911,13 @@ input[type="radio"].visually-hidden {
 	-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 			flex-direction: column;
-	-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-			justify-content: space-between;
 	min-height: 115px;
 	margin-top: 24px;
 	margin-bottom: 0;
+}
+
+.filter-checkboxes li {
+	margin-bottom: 25px;
 }
 
 .filters button {
