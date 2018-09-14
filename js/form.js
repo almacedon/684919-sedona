@@ -15,15 +15,15 @@ try {
 
 button.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	form.classList.toggle("default");
+	form.classList.toggle("searching-form-hidden");
 });
 
 form.addEventListener("submit", function (evt) {
 	if (!arrival.value || !departure.value || !adults.value || !children.value) { //почему-то не работают эт операторы ли(||), такое можно желать только с двумя параметрами?
 		evt.preventDefault();
-		form.classList.remove("form-error");
+		form.classList.remove("searching-form-error");
 		form.offsetWidth = form.offsetWidth;
-		form.classList.add("form-error");
+		form.classList.add("searching-form-error");
 	} else {
 		if (isStorageSupport) {
 			localStorage.setItem("arrivalDate", arrival.value);
