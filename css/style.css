@@ -310,7 +310,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 47px;
 }
 
-.trip-planning > button {
+.trip-planning .searching-button {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -324,12 +324,12 @@ input[type="radio"].visually-hidden {
 	height: 86px;
 }
 
-.trip-planning > button:hover,
-.trip-planning > button:focus {
+.trip-planning .searching-button:hover,
+.trip-planning .searching-button:focus {
 	background-color: #604e43;
 }
 
-.trip-planning > button:active {
+.trip-planning .searching-button:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
 }
@@ -572,6 +572,23 @@ input[type="radio"].visually-hidden {
 .search-for-hotels button[type="submit"]:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;
+}
+
+@keyframes bounce {
+	0% {
+		width: 568px;
+		height: 86px;
+	}
+	100% {
+		width: 0;
+		height: 0;
+	}
+}
+
+.default {
+	display: none;
+	animation-name: bounce;
+	animation-duration: 0.5s;
 }
 
 .map {

@@ -86,13 +86,13 @@
 				<section class="trip-planning">
 					<h2>Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-					<button type="button" aria-label="Открыть форму поиска гостинниц">Поиск гостиницы в Седоне</button>
+					<button class="searching-button" type="button" aria-label="Открыть форму поиска гостинниц">Поиск гостиницы в Седоне</button>
 					<div class="searching-form">
 						<form class="search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
 							<div class="entire-width">
 								<label for="arrival-date">Дата заезда:</label>
 								<div>
-									<input type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
+									<input class="arrival-date" type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
 									<button type="button" class="calendar">
 										<span class="visually-hidden">выбрать с помощью календаря</span>
 										<svg width="21px" height="22px" viewBox="0 0 21 22">
@@ -113,7 +113,7 @@
 							<div class="entire-width">
 								<label for="departure-date">Дата выезда:</label>
 								<div>
-									<input type="text" name="date" id="departure-date" placeholder="4 июля 2017">
+									<input class="departure-date" type="text" name="date" id="departure-date" placeholder="4 июля 2017">
 									<button type="button" class="calendar">
 										<span class="visually-hidden">выбрать с помощью календаря</span>
 										<svg width="21px" height="22px" viewBox="0 0 21 22">
@@ -141,7 +141,7 @@
 												<line x1="0" y1="6" x2="12" y2="6" stroke-width="3"/>
 											</svg>
 										</button>
-										<input type="text" name="number" id="adults-quantity" placeholder="2">
+										<input class="adults-quantity" type="text" name="number" id="adults-quantity" placeholder="2">
 										<button type="button" class="symbol plus">
 											<span class="visually-hidden">больше</span>
 											<svg xmlns="http://www.w3.org/2000/svg" width="11px" height="11px" viewBox="0 0 12 12">
@@ -160,7 +160,7 @@
 												<line x1="0" y1="6" x2="12" y2="6" stroke-width="3"/>
 											</svg>
 										</button>
-										<input type="text" name="number" id="children-quantity" placeholder="0">
+										<input class="children-quantity" type="text" name="number" id="children-quantity" placeholder="0">
 										<button type="button" class="symbol plus">
 											<span class="visually-hidden">больше</span>
 											<svg xmlns="http://www.w3.org/2000/svg" width="11px" height="11px" viewBox="0 0 12 12">
@@ -227,5 +227,41 @@
 				</div>
 			</footer>
 		</div>
+		<script type="text/javascript">
+			var button = document.querySelector(".searching-button");
+			var form = document.querySelector(".searching-form");
+			var arrival = form.querySelector(".arrival-date");
+			var departure = form.querySelector(".departure-date");
+			var adults = form.querySelector("adults-quantity");
+			var children = form.querySelector(".children-quantity");
+			var childrenAndAdults = form.querySelector(".children-and-adults");
+			var warning = document.createElement("p");
+			var storage = "";
+			var isStorageSupport = true;
+
+			try {
+				storage = localStorage.getItem("arrival");
+			} catch (err) {
+				isStorageSupport = false;
+			}
+
+			button.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				form.classList.toggle("default");
+			});
+			form.addEventListener("submit", function (evt) {
+				if (!arrival.value || !departure.value || !adults.value || !children.value) {
+					evt.preventDefault();
+					warning = "Заполните все поля, пожалуйста"
+					childrenAndAdults.appendChild(warning);
+					console.log("Заполните все поля, пожалуйста");
+				} else {
+					if (isStorageSupport) {
+						localStorage.setItem("arrivalDate", arrival.value);
+					}
+				}
+			});
+
+		</script>
 	</body>
 </html>
