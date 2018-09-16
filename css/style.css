@@ -621,7 +621,7 @@ input[type="radio"].visually-hidden {
 .searching-form-hidden {
 	display: none;
 	animation-name: bounce;
-	animation-duration: 0.5s;
+	animation-duration: 0.2s;
 }
 
 .map-section {
