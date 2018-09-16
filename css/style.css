@@ -521,6 +521,7 @@ input[type="radio"].visually-hidden {
 }
 
 .half-width input {
+	text-align: center;
 	width: 38px;
 	margin: 0 auto;
 	padding: 5px 1px;
@@ -663,7 +664,7 @@ input[type="radio"].visually-hidden {
 
 .searching-form-error {
 	-webkit-animation: shake 0.6s;
-	        animation: shake 0.6s;
+			animation: shake 0.6s;
 }
 
 .searching-form-hidden {
