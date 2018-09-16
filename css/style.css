@@ -576,53 +576,102 @@ input[type="radio"].visually-hidden {
 	background-color: #5496bd;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
 	0% {
 		opacity: 0;
-		transform: translateY(-300px);
+		-webkit-transform: translateY(-300px);
+		        transform: translateY(-300px);
 	}
 	30% {
 		opacity: 0;
 	}
 	100% {
 		opacity: 1;
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
 	}
 }
 
-@keyframes shake {
+@keyframes bounce {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-300px);
+		        transform: translateY(-300px);
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes shake {
 	0%,
 	100% {
-		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 	}
 	10%,
 	30%,
 	50%,
 	70%,
 	90% {
-		transform: translateX(-10px);
+		-webkit-transform: translateX(-10px);
+		        transform: translateX(-10px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
-		transform: translateX(10px);
+		-webkit-transform: translateX(10px);
+		        transform: translateX(10px);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		        transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		        transform: translateX(10px);
 	}
 }
 
 .searching-form {
-	animation-name: bounce;
-	animation-duration: 0.2s;
+	-webkit-animation-name: bounce;
+	        animation-name: bounce;
+	-webkit-animation-duration: 0.2s;
+	        animation-duration: 0.2s;
 }
 
 .searching-form-error {
-	animation: shake 0.6s;
+	-webkit-animation: shake 0.6s;
+	        animation: shake 0.6s;
 }
 
 .searching-form-hidden {
 	display: none;
-	animation-name: bounce;
-	animation-duration: 0.2s;
+	-webkit-animation-name: bounce;
+	        animation-name: bounce;
+	-webkit-animation-duration: 0.2s;
+	        animation-duration: 0.2s;
 }
 
 .map-section {
@@ -694,7 +743,8 @@ input[type="radio"].visually-hidden {
 .inner-page-footer .footer-social {
 	padding-top: 37px;
 	padding-left: 125px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .footer-social ul {
@@ -713,6 +763,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social .social-btn {
 	display: inline-block;
+	vertical-align: middle;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	text-align: center;
@@ -749,7 +800,8 @@ input[type="radio"].visually-hidden {
 
 .page-footer .copyright,
 .inner-page-footer .copyright {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	padding-top: 25px;
 	padding-left: 103px;
 }
@@ -856,6 +908,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 14px;
 	line-height: 38px;
 	cursor: pointer;
@@ -1211,6 +1264,7 @@ input[type="radio"].visually-hidden {
 
 .info span {
 	display: inline-block;
+	vertical-align: middle;
 	width: 110px;
 	margin-right: 6px;
 }
