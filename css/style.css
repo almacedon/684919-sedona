@@ -580,7 +580,7 @@ input[type="radio"].visually-hidden {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(-300px);
-		        transform: translateY(-300px);
+				transform: translateY(-300px);
 	}
 	30% {
 		opacity: 0;
@@ -588,7 +588,7 @@ input[type="radio"].visually-hidden {
 	100% {
 		opacity: 1;
 		-webkit-transform: translateY(0);
-		        transform: translateY(0);
+				transform: translateY(0);
 	}
 }
 
@@ -596,7 +596,7 @@ input[type="radio"].visually-hidden {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(-300px);
-		        transform: translateY(-300px);
+				transform: translateY(-300px);
 	}
 	30% {
 		opacity: 0;
@@ -604,7 +604,7 @@ input[type="radio"].visually-hidden {
 	100% {
 		opacity: 1;
 		-webkit-transform: translateY(0);
-		        transform: translateY(0);
+				transform: translateY(0);
 	}
 }
 
@@ -612,7 +612,7 @@ input[type="radio"].visually-hidden {
 	0%,
 	100% {
 		-webkit-transform: translateX(0);
-		        transform: translateX(0);
+				transform: translateX(0);
 	}
 	10%,
 	30%,
@@ -620,14 +620,14 @@ input[type="radio"].visually-hidden {
 	70%,
 	90% {
 		-webkit-transform: translateX(-10px);
-		        transform: translateX(-10px);
+				transform: translateX(-10px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
 		-webkit-transform: translateX(10px);
-		        transform: translateX(10px);
+				transform: translateX(10px);
 	}
 }
 
@@ -635,7 +635,7 @@ input[type="radio"].visually-hidden {
 	0%,
 	100% {
 		-webkit-transform: translateX(0);
-		        transform: translateX(0);
+				transform: translateX(0);
 	}
 	10%,
 	30%,
@@ -643,22 +643,22 @@ input[type="radio"].visually-hidden {
 	70%,
 	90% {
 		-webkit-transform: translateX(-10px);
-		        transform: translateX(-10px);
+				transform: translateX(-10px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
 		-webkit-transform: translateX(10px);
-		        transform: translateX(10px);
+				transform: translateX(10px);
 	}
 }
 
 .searching-form {
 	-webkit-animation-name: bounce;
-	        animation-name: bounce;
+			animation-name: bounce;
 	-webkit-animation-duration: 0.2s;
-	        animation-duration: 0.2s;
+			animation-duration: 0.2s;
 }
 
 .searching-form-error {
@@ -669,9 +669,9 @@ input[type="radio"].visually-hidden {
 .searching-form-hidden {
 	display: none;
 	-webkit-animation-name: bounce;
-	        animation-name: bounce;
+			animation-name: bounce;
 	-webkit-animation-duration: 0.2s;
-	        animation-duration: 0.2s;
+			animation-duration: 0.2s;
 }
 
 .map-section {
@@ -1401,4 +1401,3 @@ input[type="radio"].visually-hidden {
 	line-height: 21px;
 	color: #666666;
 }
-
