@@ -2,10 +2,12 @@ var button = document.querySelector(".searching-button");
 var form = document.querySelector(".searching-form");
 var arrival = form.querySelector(".arrival-date");
 var departure = form.querySelector(".departure-date");
-var adults = form.querySelector("adults-quantity");
+var adults = form.querySelector(".adults-quantity");
 var children = form.querySelector(".children-quantity");
 var storage = "";
 var isStorageSupport = true;
+
+form.classList.add("searching-form-hidden");
 
 try {
 	storage = localStorage.getItem("arrival");
@@ -15,11 +17,12 @@ try {
 
 button.addEventListener("click", function (evt) {
 	evt.preventDefault();
+	form.classList.remove("searching-form-error")
 	form.classList.toggle("searching-form-hidden");
 });
 
 form.addEventListener("submit", function (evt) {
-	if (!arrival.value || !departure.value || !adults.value || !children.value) { //почему-то не работают эт операторы ли(||), такое можно желать только с двумя параметрами?
+	if (!arrival.value || !departure.value || !adults.value || !children.value) {
 		evt.preventDefault();
 		form.classList.remove("searching-form-error");
 		form.offsetWidth = form.offsetWidth;
