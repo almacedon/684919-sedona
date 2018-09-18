@@ -1042,7 +1042,8 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 25px;
 }
 
-.filter-checkbox input[type="checkbox"]:focus ~ .checkbox-indicator {
+.filter-checkbox input[type="checkbox"]:not(:checked):focus ~ .checkbox-indicator,
+.filter-checkbox input[type="checkbox"]:checked:focus ~ svg {
 	outline-color: #4d90fe;
 	outline-offset: -2px;
 	outline-style: auto;
