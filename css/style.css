@@ -66,23 +66,23 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 15px;
 }
 
-.main-navigation li:nth-child(2) {
+.main-navigation li:nth-child(4n + 2) {
 	margin-right: 138px;
 }
 
-.main-navigation li:nth-child(3) {
+.main-navigation li:nth-child(4n + 3) {
 	letter-spacing: 0.03em;
 	margin-left: auto;
 }
 
-.main-navigation li:first-child,
-.main-navigation li:nth-child(2) {
+.main-navigation li:nth-child(4n + 1),
+.main-navigation li:nth-child(4n + 2) {
 	text-align: left;
 	padding-left: 72px;
 }
 
-.main-navigation li:last-child,
-.main-navigation li:nth-child(3) {
+.main-navigation li:nth-child(4n),
+.main-navigation li:nth-child(4n + 3) {
 	text-align: right;
 	padding-right: 73px;
 }
