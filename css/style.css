@@ -54,6 +54,7 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .main-navigation li {
@@ -474,6 +475,7 @@ input[type="radio"].visually-hidden {
 
 .search-for-hotels input:hover {
 	background-color: #ebebeb;
+	border: 2px solid #ebebeb;
 }
 
 .search-for-hotels input:active,
@@ -1038,6 +1040,13 @@ input[type="radio"].visually-hidden {
 
 .filter-checkboxes li {
 	margin-bottom: 25px;
+}
+
+.filter-checkbox input[type="checkbox"]:focus ~ .checkbox-indicator {
+	outline-color: #4d90fe;
+	outline-offset: -2px;
+	outline-style: auto;
+	outline-width: 5px;
 }
 
 .filters button {
